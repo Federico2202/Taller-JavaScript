@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+    
+    <script>
+            var num, multi=1, suma=1;
+       for(x=1;x<=10;x++){
+         num = parseInt(prompt("Digite un numero"+x));
+
+        if(num<0){
+            multi=(num*multi);
+        }else{
+            suma=(num+suma);
+        }    
+       }
+       document.writeln("La suma de los numeros positivos es de:" + suma);
+       document.writeln("La multiplicacion de los numeros negativos es de:" + multi); 
+
+    </script>
+</body>
+</html>

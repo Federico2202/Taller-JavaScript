@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+
+    <script>
+    
+       var personas; 
+       personas= parseInt(prompt("Digite la cantidad de personas"));
+       var Peso, mas=0,menos=0;
+        for(x=1;x<=personas;x++){
+           Peso= parseInt(prompt("Ingrese el peso de la persona"+x));
+           if(Peso>80){
+                mas++;
+            }else{
+                menos++;
+        }
+        }
+        document.writeln("<p>Las personas que son menores de 80KG son: " +menos +"</p>");
+        document.writeln("<p>Las personas que son mayores de 80Kg son: " +mas+ "</p>");
+
+    </script>
+</body>
+</html>
