@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Punto 15</title>
+</head>
+<body>
+
+    <script>
+    
+    var cont=0, contador=0, vector= new Array(10);
+    for(x=0; x<vector.lenght; x++){
+        vector[x] = parseInt(prompt("Digite un numero para el vector en la posicion " + (x+1)));
+    }
+    var numero=parseInt(prompt("Digite otro numero"));
+    var numero2=parseInt(prompt("Digite otro numero"));
+    for(x=0;x<vector.length; x++){
+        if(vector[x]===numero){
+            cont++;
+        }else if(vector[x]===numero2){
+            contador++;
+        }
+    }
+    if(cont!=0 && contador!=0){
+        document.write("Los numeros ingresados ya se encontraban en el vector");
+    }else if(cont!=0){
+        document.write("El primer numero ya estaba en el vector");
+    }else{
+        document.write("Ninguno de los numeros está en el vector");
+    }
+    </script> 
+</body>
+</html>

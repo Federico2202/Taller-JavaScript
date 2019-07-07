@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Punto 13</title>
+</head>
+<body>
+
+    <script>
+
+        var opcion=parseInt(prompt(menu()));
+        switch(opcion){
+            case 1:
+                prompt("El area de su circulo es: " + Cir);
+                break;
+            case 2:
+                prompt("El area de su rectangulo es: " + Rect);
+                break;
+            case 3: 
+                prompt("El area de su triangulo es: " + Tri);
+                break;
+            default:
+                break;
+        } 
+
+        function menu(){
+            let Areas=`
+            Digite 1 para el área del círculo.
+            Digite 2 para el área del rectángulo.
+            Digite 3 para el área del triángulo.
+            Digite su opción:
+            `
+            return Areas;
+        }
+
+        function Cir(){
+            var radio=parseInt(prompt("Digite el radio del Circulo"));
+            var b=Math.PI*Math.pow(radio,2);
+            return b;
+        }
+
+        function Rect(){
+            var base, altura;
+            var total=base*altura;
+            base=parseFloat(prompt("Digite la base del Rectangulo"));
+            altura=parseFloat(prompt("Digite la altura del Rectangulo"));
+            return altura;
+        }
+
+        function Tri(){
+            var base, altura;
+            var total=(base*altura)/2;
+            base=parseFloat(prompt("Digite la altura del Triangulo"));
+            altura=parseFloat(prompt("Digite la altura del Triangulo"));
+            return altura;
+        }
+
+
+    </script>
+    
+</body>
+</html>

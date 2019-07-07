@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Punto 10</title>
+</head>
+<body>
+
+    <script>
+    
+    var mas=0, menos=0, numero;
+    for(x=0; x<10; x++){
+        numero=parseInt(prompt("Digite un numero"));
+        if(numero>0){
+            mas++;
+        }else if(numero<0){
+            menos++;
+        }
+    }
+    document.write(`<p>Usted digito ${mas} numeros mayores que 0</p><p>Usted digito ${menos} numero menores que 0</p>`)
+    
+    </script>
+    
+</body>
+</html>

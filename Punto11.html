@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Punto 11</title>
+</head>
+<body>
+
+    <script>
+    
+    var y, cont=0,contador=0,vector=new Array(y);
+    y=parseInt(prompt("Digite un numero para determinar el tamaño del vector "));
+    for(x=0; x<vector.length; x++){
+        y=parseInt(prompt("Digite un numero"));
+        if(y%2===0){
+            cont++;
+        }else{
+            contador++;
+        }
+    }
+    document.write(`<p>Usted digito ${cont} numeros positivos</p> <p> Usted digito ${contador} numeros negativos</p>`);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Punto 12</title>
+</head>
+<body>
+
+    <script>
+    
+    var numero=0, cont=0, contador=0;
+    while(numero<999){
+        numero=parseInt(prompt("Digite un numero entero"));
+        if(numero===0){
+            console.log();
+        }else if(numero<999){
+            (numero>0)? cont++:contador++;
+        }
+    }
+    document.write(`<p>Usted digito ${cont} numeros positivos</p><p>Usted digito ${contador} numeros negativos</p>`);
+    </script>
+    
+</body>
+</html>
